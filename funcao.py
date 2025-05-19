@@ -36,3 +36,15 @@ salvar_carro(**{"marca": "Fiat", "modelo":"Palio", "ano":1999, "placa": "ABC-123
 
 # --> *args valores em tupla
 # --> **kwargs valores em dicionario
+
+
+# Palavra-chave global
+salario = 2000
+
+def salario_bonus(bonus):
+    global salario
+    salario += bonus
+    return salario
+
+salario_bonus(500)
+print(salario_bonus)
